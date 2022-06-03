@@ -86,10 +86,10 @@
                            class="fa-solid fa-arrow-up-wide-short"></i></button> </p>
             </div>
 
-            <!-- card dynamically created in js -->
-            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-1"
+    <!-- card dynamically created in js -->
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-3"
                  id="cards-content">
-                <div class="col">
+                <!-- <div class="col">
                     <div class="card m-1 p-2 shadow bg-white rounded"
                          style="width: 18rem;">
                         <div class="d-flex justify-content-between p-2">
@@ -97,22 +97,22 @@
                             <span><i class="fa-regular fa-bookmark me-3"></i> <i class="fa-solid fa-ellipsis-vertical"></i></span>
                         </div>
                         <img src="${item.image}"
-                             class="card-img-top img-thumbnail"
-                             alt="...">
+                             class="card-img-top img-thumbnail">
                         <div class="card-body">
-                            <h5 class="card-title">${item.titleCard}</h5>
-                            <p class="card-text">${item.description}</p>
+                            <h5 class="card-title text-center">${item.titleCard}</h5>
+                            <p class="card-text text-center">${item.description}</p>
                         </div>
-                        <div class="card-footer bg-transparent">
-                            <ul class="list-group list-group-flush">
-                                <li class="list-group-item"><i class="fa-solid fa-triangle-exclamation"></i> Priority level:
+                        <hr>
+                        <div class="part-infos">
+                            <div class="part-priority">
+                                <p class=""><i class="fa-solid fa-triangle-exclamation"></i> Priority level:
                                     <button type="button"
                                             class="btn btn-success">${item.importance}</button>
-                                </li>
-                                <li class="list-group-item"><i class="fa-solid fa-calendar-days"></i> Deadline: <span
-                                          class="deadlineDate">${item.deadline}</span> </li>
-                            </ul>
-                
+                                </p>
+                                <p class=""><i class="fa-solid fa-calendar-days"></i> Deadline: <span
+                                          class="deadlineDate">${item.deadline}</span> 
+                                </p>
+                            </div>
                         </div>
                         <div class="card-footer bg-transparent">
                             <ul class="d-flex justify-content-end align-items-center">
@@ -123,10 +123,10 @@
                             </ul>
                         </div>
                     </div>
-                </div>
-                </div>
+                </div> -->
+            </div>
 
-                <!-- <div class="card m-5 shadow bg-white rounded"
+            <!-- <div class="card m-5 shadow bg-white rounded"
                      style="width: 18rem;">
                     <div class="d-flex justify-content-between p-2">
                         <span class="badge text-bg-info">Info</span>
@@ -163,8 +163,8 @@
                         </ul>
                     </div>
                 </div> -->
-            </div>
         </div>
+    </div>
     </div>
 
 
