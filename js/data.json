@@ -45,7 +45,7 @@ let taskcard = `
         },{
             "taskName": "shopping",
             "image": "images/shopping_present.jpg",
-            "titleCard": "Buy present for my best friend",
+            "titleCard": "Buy present for Gurkan",
             "description": "my best friend has birthday soon, buy a present",
             "importance": 0,
             "deadline": "04.06.2022"
@@ -53,7 +53,7 @@ let taskcard = `
             "taskName": "fitness",
             "image": "images/fitness_pushup.jpg",
             "titleCard": "After work going to gym",
-            "description": "I have to work my abs today",
+            "description": "I have to work my abs today in the fitnesscenter",
             "importance": 0,
             "deadline": "04.06.2022"
         },{
