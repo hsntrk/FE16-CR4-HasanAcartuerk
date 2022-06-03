@@ -1,0 +1,13 @@
+/* background for weekly planner in the head section */
+
+.back-pic {
+  background-size: cover;
+  min-height: 30vh;
+  position: relative;
+  background-position: center;
+}
+
+.weekly-back {
+  padding: 1.5vh;
+  background-color: rgba(0, 0, 0, 0.5);
+}
