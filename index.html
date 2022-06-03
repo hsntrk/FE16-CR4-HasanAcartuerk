@@ -69,8 +69,8 @@
 
     <!-- Weekly Tasks section, cards will generated with js   -->
 
-    <div class="container bg-light">
-        <div class="card"
+    <div class="container bg-transparent">
+        <!-- <div class="card"
              style="width: 18rem;">
             <img src="..."
                  class="card-img-top"
@@ -90,6 +90,43 @@
                    class="card-link">Card link</a>
                 <a href="#"
                    class="card-link">Another link</a>
+            </div>
+        </div> -->
+
+        <div class="card m-5 shadow bg-white rounded"
+             style="width: 18rem;">
+            <div class="d-flex justify-content-between p-2">
+                <span class="badge text-bg-info">Info</span>
+                <!-- <button type="button"
+                        class="btn btn-info">Info</button> -->
+                <span><i class="fa-regular fa-bookmark me-3"></i> <i class="fa-solid fa-ellipsis-vertical"></i></span>
+            </div>
+            <img src="..."
+                 class="card-img-top img-thumbnail"
+                 alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                    card's
+                    content.</p>
+            </div>
+            <div class="card-footer bg-transparent">
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item"><i class="fa-solid fa-triangle-exclamation"></i> Priority level: <button
+                                type="button"
+                                class="btn btn-success">0</button> </li>
+                    <li class="list-group-item"><i class="fa-solid fa-calendar-days"></i> Deadline: <span
+                              class="deadlineDate"></span> </li>
+                </ul>
+
+            </div>
+            <div class="card-footer bg-transparent">
+                <ul class="d-flex justify-content-end align-items-center">
+                    <a href="#"
+                       class="btn btn-danger m-1"><i class="fa-solid fa-trash-can"></i> Delete</a>
+                    <a href="#"
+                       class="btn btn-success m-1"><i class="fa-regular fa-circle-check"></i> Done</a>
+                </ul>
             </div>
         </div>
 
