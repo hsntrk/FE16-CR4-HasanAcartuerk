@@ -1,0 +1,68 @@
+let taskcard = `
+    [
+        {
+            "taskName": "shopping",
+            "image": "images/shopping_milk.jpg",
+            "titleCard": "Buy a milk",
+            "description": "need to buy milk lactosefree from billa after work",
+            "importance": 0,
+            "deadline": "04.06.2022"
+        },{
+            "taskName": "house work",
+            "image": "images/house_cat.jpg",
+            "titleCard": "Feed my cat",
+            "description": "feeding my cat during cooking for dinner",
+            "importance": 0,
+            "deadline": "04.06.2022"
+        },{
+            "taskName": "exercise",
+            "image": "images/exercise_book.jpg",
+            "titleCard": "Book reading",
+            "description": "continue to read the section artificial intelligence",
+            "importance": 0,
+            "deadline": "04.06.2022"
+        },{
+            "taskName": "house work",
+            "image": "images/house_carpet.jpg",
+            "titleCard": "Clean the carpet",
+            "description": "cleaning the carpet manually, robot is broken",
+            "importance": 0,
+            "deadline": "04.06.2022"
+        },{
+            "taskName": "house work",
+            "image": "images/house_repair.jpg",
+            "titleCard": "Change the battery",
+            "description": "replacing the battery of my old device",
+            "importance": 0,
+            "deadline": "04.06.2022"
+        },{
+            "taskName": "exercise",
+            "image": "images/exercise_write.jpg",
+            "titleCard": "Write for presentation",
+            "description": "I have to write keywords for the presentation",
+            "importance": 0,
+            "deadline": "04.06.2022"
+        },{
+            "taskName": "shopping",
+            "image": "images/shopping_present.jpg",
+            "titleCard": "Buy present for my best friend",
+            "description": "my best friend has birthday soon, buy a present",
+            "importance": 0,
+            "deadline": "04.06.2022"
+        },{
+            "taskName": "fitness",
+            "image": "images/fitness_pushup.jpg",
+            "titleCard": "After work going to gym",
+            "description": "I have to work my abs today",
+            "importance": 0,
+            "deadline": "04.06.2022"
+        },{
+            "taskName": "house work",
+            "image": "images/house_trash.jpg",
+            "titleCard": "Remove trash",
+            "description": "clearing trash from last night's party",
+            "importance": 0,
+            "deadline": "06.06.2022"
+        }
+    ]
+`
