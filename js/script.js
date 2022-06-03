@@ -44,7 +44,7 @@ function printCardsOnHtml(array) {
   }
 }
 
-// call function
+// call function to print the the objects array on cards
 printCardsOnHtml(karten);
 
 // creating function while clicking on priority button
@@ -56,26 +56,28 @@ function makePriority() {
       // created a span inside the printCardsOnHtml Function for number prio
       document.getElementsByClassName("number-prio")[i].innerHTML =
         karten[i].importance;
-      // by increasing per click, achive to change the background colors
+      //   by increasing per click, achive to change the background colors,
+      //   instead of making a css style, i write in to the same class name
+      //   by adding bootstrap classnames for color
       if (karten[i].importance <= 1) {
-        document.getElementsByClassName("level-increase")[
-          i
-        ].style.backgroundColor = "bg-success";
+        document
+          .getElementsByClassName("level-increase")
+          [i].classList.add("bg-success");
       } else if (karten[i].importance <= 3) {
-        document.getElementsByClassName("level-increase")[
-          i
-        ].style.backgroundColor = "bg-warning";
+        levelup[i].classList.add("bg-warning"),
+          levelup[i].classList.add("text-dark"),
+          levelup[i].classList.add("border-warning");
       } else if (karten[i].importance <= 5) {
-        document.getElementsByClassName("level-increase")[
-          i
-        ].style.backgroundColor = "bg-danger";
+        levelup[i].classList.add("bg-danger"),
+          levelup[i].classList.add("text-white"),
+          levelup[i].classList.add("border-danger");
       } else {
-        document.getElementsByClassName("level-increase")[
-          i
-        ].style.backgroundColor = "bg-danger";
+        levelup[i].classList.add("bg-danger"),
+          levelup[i].classList.add("border-danger");
       }
     });
   }
 }
-
+// call function to count up by click
 makePriority();
+
