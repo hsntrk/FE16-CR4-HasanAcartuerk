@@ -9,7 +9,7 @@ function printCardsOnHtml(array) {
   for (let item of array) {
     document.getElementById("cards-content").innerHTML += `
     <div class="col">
-        <div class="card m-4 p-2 shadow bg-white rounded" >
+        <div class="card m-4 p-2 shadow rounded onecard">
                 <div class="d-flex justify-content-between p-2">
                     <span class="badge text-bg-info">${item.taskName}</span>
                     <span><i class="fa-regular fa-bookmark me-3"></i> <i class="fa-solid fa-ellipsis-vertical"></i></span>
@@ -33,10 +33,8 @@ function printCardsOnHtml(array) {
                     </div>
                     <div class="card-footer bg-transparent">
                         <ul class="d-flex justify-content-end align-items-center mb-0">
-                            <a href="#"
-                               class="btn btn-danger m-1"><i class="fa-solid fa-trash-can"></i> Delete</a>
-                            <a href="#"
-                               class="btn btn-success m-1"><i class="fa-regular fa-circle-check"></i> Done</a>
+                            <a class="btn btn-danger m-1 btn-delete"><i class="fa-solid fa-trash-can"></i> Delete</a>
+                            <a class="btn btn-success m-1 btn-done"><i class="fa-regular fa-circle-check"></i> Done</a>
                         </ul>
                 </div>
         </div>
@@ -96,6 +94,8 @@ function sortByPriority() {
     // after clicking the sort button, it was not possible to click the priority buttons, so i call the function both again, now it works.
     printCardsOnHtml(sortedPriority);
     makePriority();
+    deleteCard();
+    taskDone();
 
     let levelup = document.getElementsByClassName("level-increase");
     for (let i = 0; i < levelup.length; i++) {
@@ -107,3 +107,34 @@ function sortByPriority() {
 
 // calling the function to run, only used outside and here.
 sortByPriority();
+
+// to "delete"/display: none only one card when clicking to the delete button
+function deleteCard() {
+  let getButtonDelete = document.getElementsByClassName("btn-delete");
+  for (let i = 0; i < getButtonDelete.length; i++) {
+    getButtonDelete[i].addEventListener("click", function () {
+      let cardDisplayNone = (document.getElementsByClassName("onecard")[
+        i
+      ].style.display = "none");
+
+      // printCardsOnHtml(cardDisplayNone);
+      // sortByPriority(cardDisplayNone);
+    });
+  }
+}
+
+deleteCard();
+
+// colorizing the bacground of one card when clicking to the done button
+function taskDone() {
+  let getButtonDone = document.getElementsByClassName("btn-done");
+  for (let i = 0; i < getButtonDone.length; i++) {
+    getButtonDone[i].addEventListener("click", function () {
+      let cardBgDone = document
+        .getElementsByClassName("onecard")
+        [i].classList.add("bg-secondary");
+    });
+  }
+}
+
+taskDone();

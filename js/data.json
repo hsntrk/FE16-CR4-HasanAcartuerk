@@ -60,7 +60,7 @@ let taskcard = `
             "taskName": "house work",
             "image": "images/house_trash.jpg",
             "titleCard": "Remove trash",
-            "description": "clearing trash from last night's party",
+            "description": "clearing trash from last night's house party",
             "importance": 0,
             "deadline": "06.06.2022"
         }
